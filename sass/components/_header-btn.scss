@@ -15,7 +15,7 @@
 
   &:not(:last-child) {
     padding-right: 5px;
-    border-right: 2px solid #2b2b2a;
+    border-right: 1px solid #2b2b2a;
   }
 }
 
@@ -35,14 +35,6 @@
     background-color: var(--primary-color-text);
     padding: 10px 30px;
     border-radius: 15px;
-
-    &:hover,
-    &:focus {
-      color: var(--secondary-color-text);
-      border-color: var(--primary-color-text);
-      transition: color var(--transition-dur-and-func),
-        border-color var(--transition-dur-and-func);
-    }
   }
   .header__btn-text {
     color: var(--secondary-color-text);
@@ -50,7 +42,7 @@
 
     &:hover,
     &:focus {
-      color: var(--primary-color-text);
+      color: var(--accent);
       transition: color var(--transition-dur-and-func);
     }
 

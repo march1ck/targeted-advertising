@@ -29,6 +29,7 @@
     &:hover,
     &:focus {
       color: var(--accent);
+      transition: color var(--transition-dur-and-func);
     }
   }
 }
