@@ -3,3 +3,10 @@
     display: none;
   }
 }
+@media screen and (min-width: 1920px) {
+  .header__list {
+    display: flex;
+    gap: 50px;
+    margin-left: 245px;
+  }
+}

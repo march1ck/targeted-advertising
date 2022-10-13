@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 375px) {
   .header__btn-wrapper {
     display: flex;
     align-items: center;
@@ -11,11 +11,46 @@
   }
   .header__btn-text {
     font-family: $fontPrimary;
-    color: var(--primary-color-tex);
+    color: var(--primary-color-text);
     @include font(14px, 400, 21px);
+
+    &:not(:last-child) {
+      padding-right: 5px;
+      border-right: 2px solid #2b2b2a;
+    }
   }
-  .header__btn-text:not(:last-child) {
-    padding-right: 5px;
-    border-right: 2px solid #2b2b2a;
+}
+@media screen and (min-width: 1920px) {
+  .header__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: $fontPrimary;
+    @include font(16px, 400, 24px);
+    color: var(--primary-color-text);
+  }
+  .header__btn-wrapper {
+    gap: 145px;
+    margin-left: auto;
+  }
+  .header__tel {
+    font-family: $secondaryFont;
+    @include font(24px, 500, 36px);
+    color: var(--primary-color-text);
+  }
+  .header__btn {
+    background-color: var(--primary-color-text);
+    padding: 15px 41px;
+    border-radius: 15px;
+  }
+  .header__btn-text {
+    color: var(--secondary-color-text);
+    @include font(16px, 400, 24px);
+
+    &:not(:last-child) {
+      padding-right: 5px;
+      border-right: 2px solid #ffffff;
+    }
   }
 }

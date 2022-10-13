@@ -1,0 +1,29 @@
+@media screen and (min-width: 375px) {
+  .proposition__title {
+    font-family: $secondaryFont;
+    @include font(30px, 900, 36px);
+    text-align: center;
+  }
+
+  .proposition__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 22px;
+    padding-right: 21px;
+  }
+  .proposition__item {
+    width: calc((100%) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .proposition__icon {
+    width: 80px;
+    height: 80px;
+  }
+  .proposition__text {
+    @include font(16px, 400, 24px);
+    text-align: center;
+  }
+}
