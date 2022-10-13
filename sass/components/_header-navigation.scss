@@ -3,13 +3,37 @@
     display: none;
   }
 }
-// @media screen and (min-width: 768px) {
-//   .header__list {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-//   .header__item:nth-child(n + 3) {
-//     display: none;
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__item:nth-child(n + 3) {
+    display: none;
+  }
+  .header__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-color-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    &:hover,
+    &:focus {
+      color: var(--accent);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__item:nth-child(n + 3) {
+    display: block;
+  }
+}
