@@ -4,10 +4,16 @@
   --aditional-clor-text: #b7b7b7;
 }
 
-@media screen and (max-width: 767px) {
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 375px) {
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    max-width: 343px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1920px) {
