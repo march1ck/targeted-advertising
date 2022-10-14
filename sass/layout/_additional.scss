@@ -1,49 +1,51 @@
-.additional {
-  background-color: #2b2b2a;
-  padding: 0px 16px 60px 16px;
-}
-.additional__description {
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-}
-.additional__thumb {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.additional__icon {
-  width: 15px;
-  height: 15px;
-  fill: $vector-first-color;
-}
-.additional__text {
-  width: 192px;
-  font-family: $fontPrimary;
-  flex-wrap: wrap;
-  @include font(18px, 400, 27px);
-  color: var(--secondary-color-text);
-}
-.information-box {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 33px;
-}
-.information {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-left: 2px solid $vector-first-color;
-}
-.information__subtext {
-  font-weight: $fontPrimary;
-  @include font(16px, 300, 24px);
-  color: var(--secondary-color-text);
-}
-.information__text {
-  font-weight: $fontPrimary;
-  @include font(18px, 700, 27px);
-  color: var(--secondary-color-text);
+@media screen and (min-width: 320px) {
+  .additional {
+    background-color: #2b2b2a;
+    padding: 0px 16px 60px 16px;
+  }
+  .additional__description {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .additional__thumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .additional__icon {
+    width: 15px;
+    height: 15px;
+    fill: $vector-first-color;
+  }
+  .additional__text {
+    width: 192px;
+    font-family: $fontPrimary;
+    flex-wrap: wrap;
+    @include font(18px, 400, 27px);
+    color: var(--secondary-color-text);
+  }
+  .information-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 33px;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 2px solid $vector-first-color;
+  }
+  .information__subtext {
+    font-weight: $fontPrimary;
+    @include font(16px, 300, 24px);
+    color: var(--secondary-color-text);
+  }
+  .information__text {
+    font-weight: $fontPrimary;
+    @include font(18px, 700, 27px);
+    color: var(--secondary-color-text);
+  }
 }

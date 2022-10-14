@@ -1,37 +1,39 @@
-.hero__list {
-  position: absolute;
-  display: flex;
-  gap: 15px;
-  margin-top: 180px;
-}
-.hero__link {
-  font-family: $fontPrimary;
-  text-transform: uppercase;
-  padding: 5px 20px;
-  border-radius: 30px;
-  margin-bottom: 20px;
-  background-color: var(--hero-green-link);
-  @include font(18px, 500, 27px);
-  color: var(--primary-color-text);
-}
-.hero__link--orange {
-  background-color: var(--hero-orange-link);
-}
-.hero__text {
-  position: absolute;
-  top: 170px;
-  left: 0px;
-  font-family: $fontPrimary;
-  @include font(133px, 900, 187px);
-  text-transform: uppercase;
-  letter-spacing: 15px;
-  color: var(--hero-course);
-}
-.hero__title {
-  position: absolute;
-  top: 280px;
-  left: 16px;
-  font-family: $secondaryFont;
-  @include font(36px, 900, 43px);
-  color: var(--secondary-color-text);
+@media screen and (min-width: 320px) {
+  .hero__list {
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    margin-top: 180px;
+  }
+  .hero__link {
+    font-family: $fontPrimary;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    background-color: var(--hero-green-link);
+    @include font(18px, 500, 27px);
+    color: var(--primary-color-text);
+  }
+  .hero__link--orange {
+    background-color: var(--hero-orange-link);
+  }
+  .hero__text {
+    position: absolute;
+    top: 170px;
+    left: 0px;
+    font-family: $fontPrimary;
+    @include font(133px, 900, 187px);
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    color: var(--hero-course);
+  }
+  .hero__title {
+    position: absolute;
+    top: 280px;
+    left: 16px;
+    font-family: $secondaryFont;
+    @include font(36px, 900, 43px);
+    color: var(--secondary-color-text);
+  }
 }
