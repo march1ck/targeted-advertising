@@ -1,0 +1,39 @@
+.hero__vector-first {
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100px 100px 0 0;
+  border-top: 15px solid $vector-first-color;
+  border-left: 15px solid $vector-first-color;
+  border-right: 15px solid $vector-first-color;
+  position: absolute;
+  right: -25px;
+  top: 21.71px;
+  z-index: 2;
+  transform: rotate(-128deg);
+}
+// .hero__vector-check {
+//   width: 100px;
+//   height: 50px;
+//   border-radius: 100px 100px 0 0;
+//   border-top: 15px solid #343431;
+//   border-left: 15px solid #343431;
+//   border-right: 15px solid #343431;
+//   position: absolute;
+//   top: 4.71px;
+//   left: 71px;
+//   z-index: 2;
+//   transform: rotate(-180deg);
+// }
+// .vector_grey_second {
+//     width: 100px;
+//     height: 50px;
+//     border-radius: 100px 100px 0 0;
+//     border-top: 15px solid #343431;
+//     border-left: 15px solid #343431;
+//     border-right: 15px solid #343431;
+//     position: absolute;
+//     left: -14px;
+//     z-index: 2;
+//     transform: rotate(72deg);
+// }
