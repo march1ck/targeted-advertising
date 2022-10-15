@@ -88,8 +88,9 @@
             <span class="header__btn-text">Вхід</span>
             <span class="header__btn-text">Реєстрація</span>
           </button>
-          <button class="burger" type="button">
+          <button class="burger" type="button" data-menu-open>
             <svg
+              class="burger__icon"
               aria-label="burger-icon for mobile menu"
               width="25px"
               height="16px"
@@ -97,6 +98,51 @@
               <use href="./images/icon.svg#icon-burger"></use>
             </svg>
           </button>
+        </div>
+      </div>
+
+      <!-- Mobile-menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/icon.svg#icon-close-mobile-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu__box">
+            <nav class="mobile-nav">
+              <ul class="mobile-nav__list list">
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link link" href="#">Офлайн програми</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link link" href="#">Онлайн програми</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link link" href="#">Розклад</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link link" href="#">Тренери</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link link" href="#">Тести</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__link link" href="#">Блог</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="mobile-menu__contacts">
+              <a class="mobile-menu__tel link" href="tel:+380991231212"
+                >+38 (099) 123-12-12</a
+              >
+
+              <button class="mibile__btn" type="button">
+                <span class="mobile__btn-text">Вхід</span>
+                <span class="mobile__btn-text">Реєстрація</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -244,5 +290,7 @@
         </li>
       </ul>
     </section>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

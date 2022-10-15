@@ -1,0 +1,27 @@
+.mobile-menu__contacts {
+  display: flex;
+  align-items: baseline;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.mobile-menu__tel {
+  @include font(16px, 500, 24px);
+  color: var(--primary-color-text);
+}
+.mibile__btn {
+  border: none;
+  border-radius: 25px;
+  padding: 5px 20px;
+  background-color: var(--primary-color-text);
+}
+
+.mobile__btn-text {
+  @include font(14px, 400, 22px);
+  color: var(--secondary-color-text);
+
+  &:not(:last-child) {
+    padding-right: 5px;
+    border-right: 2px solid var(--secondary-color-text);
+  }
+}
