@@ -260,14 +260,11 @@ ol {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero__img-box {
+    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero-desktop@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-  }
   .hero__name {
     top: 108px;
   }
