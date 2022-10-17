@@ -1,9 +1,10 @@
 @media screen and (min-width: 320px) {
   .hero__list {
-    position: absolute;
     display: flex;
     gap: 15px;
-    margin-top: 180px;
+    position: absolute;
+    top: 0px;
+    left: 16px;
   }
   .hero__link {
     font-family: $fontPrimary;
@@ -19,18 +20,15 @@
     background-color: var(--hero-orange-link);
   }
   .hero__text {
-    position: absolute;
-    top: 170px;
-    left: 0px;
     font-family: $fontPrimary;
-    @include font(133px, 900, 187px);
+    @include font(133px, 900, 186px);
     text-transform: uppercase;
     letter-spacing: 15px;
     color: var(--hero-course);
   }
   .hero__title {
     position: absolute;
-    top: 280px;
+    top: 100px;
     left: 16px;
     font-family: $secondaryFont;
     @include font(36px, 900, 43px);
