@@ -211,16 +211,12 @@ ol {
 }
 .hero__wrapper {
   position: relative;
+  background-color: var(--primary-color-text);
 }
 
 .hero__img {
   width: 100%;
   display: block;
-  background-size: cover;
-}
-
-.hero__content-box {
-  background-color: var(--primary-color-text);
 }
 
 .hero__name {
