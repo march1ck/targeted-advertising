@@ -23,7 +23,6 @@
     font-family: $fontPrimary;
     @include font(133px, 900, 186px);
     text-transform: uppercase;
-    letter-spacing: 15px;
     color: var(--hero-course);
   }
   .hero__title {
