@@ -209,30 +209,17 @@ ol {
     display: none;
   }
 }
-.hero__wrapper {
+.hero {
+  z-index: 10;
+  background: rgb(47, 47, 47);
+  background: linear-gradient(21deg, rgb(47, 47, 47) 48%, rgba(255, 255, 255, 0) 100%);
+}
+
+.hero__img {
   position: relative;
-}
-
-.hero__content-box {
-  background-color: var(--primary-color-text);
-}
-
-.hero__img-box {
-  max-width: 480px;
-  height: 371px;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../images/mobile/hero-mobile.jpg");
-}
-
-.hero__name {
-  position: absolute;
-  top: 168px;
-  left: 0;
+  z-index: -10;
+  width: 500px;
+  height: 500px;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -265,8 +252,13 @@ ol {
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__name {
-    top: 108px;
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .hero__img {
+    width: 750px;
+    height: 750px;
   }
 }
 .mobile-menu__container {
@@ -376,12 +368,12 @@ ol {
 }
 
 @media screen and (min-width: 320px) {
+  .hero__wrapper {
+    padding: 60px 0;
+  }
   .hero__list {
     display: flex;
     gap: 15px;
-    position: absolute;
-    top: 0px;
-    left: 16px;
   }
   .hero__link {
     font-family: "Roboto", sans-serif;
@@ -407,14 +399,18 @@ ol {
     color: var(--hero-course);
   }
   .hero__title {
-    position: absolute;
-    top: 100px;
-    left: 16px;
     font-family: "Inter", sans-serif;
     font-size: 36px;
     font-weight: 900;
     line-height: 1.1944444444;
     color: var(--secondary-color-text);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .inform-price {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
   }
 }
 @media screen and (min-width: 320px) {
@@ -474,10 +470,21 @@ ol {
     color: var(--secondary-color-text);
   }
 }
-@media screen and (min-width: 320px) {
-  .price {
-    margin-top: 67px;
+@media screen and (min-width: 1200px) {
+  .additional__description {
+    margin-bottom: 75px;
   }
+  .information-box {
+    margin-top: 60px;
+  }
+  .inform-price {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 43px;
+  }
+}
+@media screen and (min-width: 320px) {
   .price__wrapper {
     display: flex;
     gap: 9px;
