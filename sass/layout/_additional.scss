@@ -49,6 +49,17 @@
     color: var(--secondary-color-text);
   }
 }
+
+@media screen and (min-width: 768px) {
+  .additional {
+    position: absolute;
+    top: 450px;
+  }
+  .inform-price {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .additional__description {
     margin-bottom: 75px;
