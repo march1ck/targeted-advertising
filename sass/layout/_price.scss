@@ -1,4 +1,7 @@
 @media screen and (min-width: 320px) {
+  .price {
+    margin-top: 50px;
+  }
   .price__wrapper {
     display: flex;
     gap: 9px;
@@ -45,5 +48,10 @@
   .price__trick {
     @include font(14px, 400, 21px);
     color: var(--secondary-color-text);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .price {
+    margin-top: 75px;
   }
 }

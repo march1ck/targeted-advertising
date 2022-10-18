@@ -260,8 +260,8 @@ ol {
     background: linear-gradient(270deg, rgba(10, 114, 222, 0.1155812667) 0%, rgb(38, 35, 35) 40%);
   }
   .background-img {
-    width: 750px;
-    height: 750px;
+    width: 900px;
+    height: 900px;
   }
 }
 .mobile-menu__container {
@@ -374,6 +374,10 @@ ol {
   .hero__wrapper {
     padding: 60px 0;
   }
+  .hero__name {
+    position: absolute;
+    top: 200px;
+  }
   .hero__list {
     display: flex;
     gap: 15px;
@@ -394,6 +398,8 @@ ol {
     background-color: var(--hero-orange-link);
   }
   .hero__text {
+    position: absolute;
+    top: 20px;
     font-family: "Roboto", sans-serif;
     font-size: 133px;
     font-weight: 900;
@@ -402,6 +408,8 @@ ol {
     color: var(--hero-course);
   }
   .hero__title {
+    position: absolute;
+    top: 120px;
     font-family: "Inter", sans-serif;
     font-size: 36px;
     font-weight: 900;
@@ -410,25 +418,8 @@ ol {
   }
 }
 @media screen and (min-width: 767px) {
-  .hero__text {
-    color: var(--hero-course);
-  }
   .hero__wrapper {
-    padding: 60px 0 0 0;
-  }
-}
-@media screen and (min-width: 320px) {
-  .hero__name {
-    position: absolute;
-    top: 200px;
-  }
-  .hero__text {
-    position: absolute;
-    top: 20px;
-  }
-  .hero__title {
-    position: absolute;
-    top: 120px;
+    padding: 60px 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -439,10 +430,6 @@ ol {
   }
 }
 @media screen and (min-width: 320px) {
-  .additional {
-    position: relative;
-    padding: 0px 16px;
-  }
   .additional__description {
     display: flex;
     flex-direction: column;
@@ -519,6 +506,9 @@ ol {
   }
 }
 @media screen and (min-width: 320px) {
+  .price {
+    margin-top: 50px;
+  }
   .price__wrapper {
     display: flex;
     gap: 9px;
@@ -575,6 +565,11 @@ ol {
     font-weight: 400;
     line-height: 1.5;
     color: var(--secondary-color-text);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .price {
+    margin-top: 75px;
   }
 }
 .proposition {
