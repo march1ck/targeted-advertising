@@ -1,10 +1,10 @@
 .hero {
   z-index: 10;
   background: rgb(10, 114, 222);
-  background: linear-gradient(
-    217deg,
-    rgba(10, 114, 222, 0.11558126668636204) 0%,
-    rgba(47, 47, 47, 1) 37%
+  background: radial-gradient(
+    circle at top right,
+    rgba(10, 114, 222, 0.1155812667) 0%,
+    rgb(47, 47, 47) 35%
   );
 }
 .background-img {
@@ -29,6 +29,14 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .hero {
+    background: rgb(10, 114, 222);
+    background: radial-gradient(
+      circle at top right,
+      rgba(10, 114, 222, 0.1155812667) 0%,
+      rgb(47, 47, 47) 60%
+    );
+  }
   .background-img {
     height: 750px;
     background-image: linear-gradient(
@@ -78,10 +86,10 @@
     display: flex;
     flex-direction: row-reverse;
     background: rgb(10, 114, 222);
-    background: linear-gradient(
-      270deg,
-      rgba(10, 114, 222, 0.11558126668636204) 0%,
-      rgba(38, 35, 35, 1) 40%
+    background: radial-gradient(
+      circle at top right,
+      rgba(10, 114, 222, 0.1155812667) 0%,
+      rgb(47, 47, 47) 50%
     );
   }
   .background-img {
